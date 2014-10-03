@@ -1408,10 +1408,7 @@
         var _ = this;
         var index = parseInt($(event.target).parents('.slick-slide').attr("index"));
         if(!index) index = 0;
-
-        if(_.slideCount <= _.options.slidesToShow){
-            return;
-        }
+        
         _.slideHandler(index);
 
     };
